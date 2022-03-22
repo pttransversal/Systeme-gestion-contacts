@@ -1,5 +1,5 @@
 package org.gestioncontact;
-
+/*
 import java.util.List;
 
 import org.gestioncontact.model.Contact;
@@ -7,17 +7,18 @@ import org.gestioncontact.repository.ContactRepository;
 import org.gestioncontact.service.ContactService;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
+*/
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
 class SystemeGestionContactsApplicationTests {
 
 	
-	@Autowired
-	private ContactService contactService;
+	//@Autowired
+	//private ContactService contactService;
 	
-	@Autowired
-	private ContactRepository contactRepository;
+	//@Autowired
+	//private ContactRepository contactRepository;
 	/*
 	@Test
 	void testCreateContact() {
@@ -47,15 +48,15 @@ class SystemeGestionContactsApplicationTests {
 		}*/
 	
 	
-	@Test
-	void testUpdateContact() {
+	//@Test
+	/*void testUpdateContact() {
 		
 		    Contact contact = contactRepository.findById(2L).get();
 		    contact.setPrenom("Siham");
 		    contactService.saveContact(contact);
 		    System.out.println(contact);
 		
-		}
+		}*/
 	
     /*
 	@Test
@@ -65,12 +66,12 @@ class SystemeGestionContactsApplicationTests {
 		
 		}*/
 	
-	@Test
-	void testDeleteContact() {
+	//@Test
+	/*void testDeleteContact() {
 		
 		    contactService.deleteContactById(8L);
 		
-		}
+		}*/
 	
 	/*
 	@Test
@@ -83,24 +84,24 @@ class SystemeGestionContactsApplicationTests {
 		
 		}*/
 	
-	@Test
-	void testFindAllContact() {
+	//@Test
+	/*void testFindAllContact() {
 		
 		   List<Contact> contact = contactService.getAllContacts();
 		   
 		   for (Contact ct:contact)
 			   System.out.println(contact);
 		
-		}
+		}*/
 	
 	
 	
 	
-	@Test
-	void testChercherContact() {
+	//@Test
+	/*void testChercherContact() {
 		
 		List<Contact> list = contactService.chercherContacts("amis");
 		list.forEach(ct -> System.out.println(" ====> " + ct.getNom()));
 		
-		}
+		}*/
 }
